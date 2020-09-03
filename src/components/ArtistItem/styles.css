@@ -1,0 +1,36 @@
+.artist-item {
+    background: var(--color-primary-lighter);
+    border-radius: 0.5rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px black;
+    transition: 200ms;
+}
+
+.artist-item:hover {
+    background: var(--color-primary);
+    transition: 200ms;
+}
+
+.artist-img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.artist-item .artist-item-header {
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artist-link {
+    text-decoration: none;
+    color: var(--color-text-in-primary);
+}
+
+.artist-info-icon {
+    padding: 0 2rem;
+    color: var(--color-text-in-primary);
+    font-size: 2.3rem;
+}

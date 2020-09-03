@@ -52,6 +52,7 @@ textarea {
 }
 
 .container {
+    height: 50vh;
     width: 90vw;
     max-width: 700px;
 }
