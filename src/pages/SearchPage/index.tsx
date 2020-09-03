@@ -6,10 +6,12 @@ import { RiSearchLine } from "react-icons/ri";
 import SearchBar from "../../components/SearchBar";
 import ButtonPrimary from "../../components/ButtonPrimary";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 function SearchPage() {
   return (
     <>
+      <Header />
       <div className="center">
         <p className="title">Digite o nome de um artista para pesquisar</p>
         <div>
@@ -19,6 +21,7 @@ function SearchPage() {
           <RiSearchLine />
         </ButtonPrimary>
       </div>
+      <Footer />
     </>
   );
 }

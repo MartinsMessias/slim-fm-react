@@ -1,0 +1,22 @@
+#artist-result {
+    width: 100vw;
+    height: 100vh;
+}
+
+#artist-result .artist-history-list {
+    margin: 3.2rem auto;
+    width: 99%;
+    list-style: none;
+}
+
+
+.artist-block {
+    margin-top: 15.2rem;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 700px) {
+    #artist-result {
+        max-width: 50%;
+    }
+}

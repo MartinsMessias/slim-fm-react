@@ -6,26 +6,33 @@ import ArtistItem from "../../components/ArtistItem";
 
 function ArtistsPage() {
   return (
-    <div className="container">
-      <div className="results">
-        <h4 className="artist">
+    <div id="artist-result" className="container">
+      <div className="artist-block">
+        <h4>
           Você buscou por
           <h1 className="artist-name">Michael Jackson</h1>
         </h4>
         <hr />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
-        <ArtistItem />
+        <ul className="artist-history-list">
+          <li>
+            <ArtistItem />
+          </li>
+          <li>
+            <ArtistItem />
+          </li>{" "}
+          <li>
+            <ArtistItem />
+          </li>{" "}
+          <li>
+            <ArtistItem />
+          </li>{" "}
+          <li>
+            <ArtistItem />
+          </li>{" "}
+          <li>
+            <ArtistItem />
+          </li>
+        </ul>
       </div>
     </div>
   );

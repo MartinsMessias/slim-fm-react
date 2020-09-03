@@ -1,0 +1,20 @@
+#search-history-list .history-list {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+#search-history-list {
+    width: 100vw;
+    height: 100vh;
+}
+
+.search-history-results {
+    margin-top: 15.2rem;
+    padding-left: 5%;
+}
+
+@media (min-width: 700px) {
+    #search-history-list {
+        max-width: 100%;
+    }
+}
