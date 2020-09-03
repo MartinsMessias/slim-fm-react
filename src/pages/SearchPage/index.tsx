@@ -7,6 +7,7 @@ import SearchBar from "../../components/SearchBar";
 import ButtonPrimary from "../../components/ButtonPrimary";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import ArtistsPage from "../ArtistsPage";
 
 function SearchPage() {
   return (
@@ -17,7 +18,7 @@ function SearchPage() {
         <div>
           <SearchBar />
         </div>
-        <ButtonPrimary title="Pesquisar" link="#">
+        <ButtonPrimary title="Pesquisar" link="/search-result">
           <RiSearchLine />
         </ButtonPrimary>
       </div>
