@@ -2,18 +2,19 @@ import React from "react";
 
 //Styles
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <h1 className="site-title">SlimFM</h1>
       <nav>
-        <a href="#" className="menu-item">
+        <Link to="/" className="menu-item">
           Pesquisar
-        </a>
-        <a href="#" className="menu-item">
+        </Link>
+        <Link to="/search-history" className="menu-item">
           Histórico
-        </a>
+        </Link>
       </nav>
     </header>
   );
