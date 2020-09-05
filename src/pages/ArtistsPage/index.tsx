@@ -1,18 +1,20 @@
-import React, { useState, FormEvent, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
+import api from "../../services/api";
+
 //Custom
 import "./styles.css";
+
+//Components
 import ArtistItem, { Artist } from "../../components/ArtistItem";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import api from "../../services/api";
-//Components
 
 function ArtistsPage() {
   const [artists, setArtists] = useState([]);
 
   var url = window.location.pathname;
   var cutUrl = url.split("/");
-  const artistName = cutUrl[cutUrl.length - 1];
+  const artistName = cutUrl[cutUrl.length - 1].replace("%20", " ");
 
   useEffect(() => {
     const response = api

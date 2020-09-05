@@ -1,11 +1,13 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 //Custom
 import "./styles.css";
-import { RiSearchLine } from "react-icons/ri";
+
 //Components
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import { RiSearchLine } from "react-icons/ri";
 
 function SearchPage() {
   const [artist, setArtist] = useState("");
