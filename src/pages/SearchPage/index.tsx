@@ -1,16 +1,11 @@
 import React, { useState, FormEvent } from "react";
+import { Link } from "react-router-dom";
 
 //Custom
 import "./styles.css";
 import { RiSearchLine } from "react-icons/ri";
 //Components
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import ArtistsPage from "../ArtistsPage";
-import api from "../../services/api";
-import ArtistItem, { Artist } from "../../components/ArtistItem";
-import { Route, Link, Redirect } from "react-router-dom";
-import { stringify } from "querystring";
 
 function SearchPage() {
   const [artist, setArtist] = useState("");
@@ -36,7 +31,7 @@ function SearchPage() {
           </span>
         </Link>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -5,18 +5,30 @@
 
 #artist-result .artist-history-list {
     margin: 3.2rem auto;
-    width: 99%;
+    width: 90%;
     list-style: none;
 }
 
-
-.artist-block {
-    margin-top: 15.2rem;
-    padding: 0 1.5rem;
+.container .artist-block {
+    margin-top: 10.2rem;
+    padding: 0 1.2rem;
 }
+
 
 @media (min-width: 700px) {
     #artist-result {
-        max-width: 50%;
+        max-width: 70%;
+    }
+
+    #artist-result main {
+        padding: 3.2rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .artist-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }

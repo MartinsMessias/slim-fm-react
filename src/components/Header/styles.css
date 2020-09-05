@@ -4,12 +4,9 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    top: 0;
-    position: fixed;
     background-color: var(--color-primary);
     color: var(--color-text-in-primary);
     box-shadow: 0px 0px 5px black;
-    border-radius: 0px;
 }
 
 nav {
@@ -38,7 +35,7 @@ nav a:hover {
 @media (min-width: 700px) {
     header {
         flex-direction: row;
-        height: 100px;
+        padding: 15px;
     }
 
     nav {

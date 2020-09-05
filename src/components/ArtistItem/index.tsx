@@ -21,12 +21,12 @@ const ArtistItem: React.FC<ArtistItemProps> = ({ artist }) => {
       <article className="artist-item">
         <div className="artist-item-header">
           <img
-            className="artist-img"
-            src={artist.image[2]["#text"]}
+            className="artist-item-img"
+            src={artist.image[1]["#text"]}
             alt="Artist pic"
           />
           <div>
-            <strong>{artist.name}</strong>
+            <strong className="artirts-item-name">{artist.name}</strong>
             <h6>{artist.listeners} ouvintes</h6>
           </div>
           <div className="artist-info-icon">

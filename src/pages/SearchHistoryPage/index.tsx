@@ -1,7 +1,7 @@
 import React from "react";
 //Custom
 import "./styles.css";
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 function SearchHistoryPage() {
@@ -22,7 +22,7 @@ function SearchHistoryPage() {
           </ul>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

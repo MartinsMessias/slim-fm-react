@@ -32,19 +32,19 @@ function ArtistsPage() {
       <Header />
       <div id="artist-result" className="container">
         <div className="artist-block">
-          <h4>
-            Você buscou por
+          <h2>
+            Resultados encontrados para{" "}
             <h1 className="artist-name">{artistName}</h1>
-          </h4>
+          </h2>
           <hr />
-          <main>
+          <main className="artist-list">
             {artists.map((artist: Artist) => {
               return <ArtistItem key={artist.name} artist={artist} />;
             })}
           </main>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

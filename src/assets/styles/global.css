@@ -30,20 +30,21 @@
 html,
 body,
 #root {
-    height: 100vh;
+    height: 100%;
 }
 
 body {
     background: var(--color-background-primary);
 }
 
-/*
+
 #root {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-} 
+}
+
 body,
 input,
 button,
@@ -62,5 +63,3 @@ textarea {
         font-size: 62.5%;
     }
 }
-
-*/
