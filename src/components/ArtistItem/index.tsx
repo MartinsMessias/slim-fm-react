@@ -8,7 +8,7 @@ export interface Artist {
   name: string;
   listeners: string;
   url: string;
-  image: string;
+  image: any;
 }
 
 interface ArtistItemProps {
@@ -20,10 +20,14 @@ const ArtistItem: React.FC<ArtistItemProps> = ({ artist }) => {
     <a href={artist.url} className="artist-link">
       <article className="artist-item">
         <div className="artist-item-header">
-          <img className="artist-img" src={artist.image} alt="Artist pic" />
+          <img
+            className="artist-img"
+            src={artist.image[2]["#text"]}
+            alt="Artist pic"
+          />
           <div>
             <strong>{artist.name}</strong>
-            <h6>{artist.listeners} pessoas já ouviram</h6>
+            <h6>{artist.listeners} ouvintes</h6>
           </div>
           <div className="artist-info-icon">
             <RiPlayMiniFill />
