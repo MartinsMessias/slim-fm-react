@@ -9,6 +9,7 @@ import Header from "../../components/Header";
 function ArtistsPage() {
   return (
     <>
+      <Header />
       <div id="artist-result" className="container">
         <div className="artist-block">
           <h4>
@@ -16,16 +17,10 @@ function ArtistsPage() {
             <h1 className="artist-name">Michael Jackson</h1>
           </h4>
           <hr />
-          <div className="artist-history-list">
-            <ArtistItem />
-            <ArtistItem />
-            <ArtistItem />
-            <ArtistItem />
-            <ArtistItem />
-            <ArtistItem />
-          </div>
+          {/* <div className="artist-history-list"></div> */}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
