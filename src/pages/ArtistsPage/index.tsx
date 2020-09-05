@@ -14,7 +14,10 @@ function ArtistsPage() {
 
   var url = window.location.pathname;
   var cutUrl = url.split("/");
-  const artistName = cutUrl[cutUrl.length - 1].replace("%20", " ");
+  const artistName = cutUrl[cutUrl.length - 1];
+
+  var date = new Date();
+  const date_now = date.getTime();
 
   useEffect(() => {
     const response = api
@@ -26,6 +29,7 @@ function ArtistsPage() {
       })
       .then((response) => {
         setArtists(response.data["results"]["artistmatches"]["artist"]);
+        localStorage.setItem(date_now.toString(), artistName);
       });
   }, []);
 
