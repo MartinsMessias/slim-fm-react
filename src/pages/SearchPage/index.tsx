@@ -24,6 +24,7 @@ function SearchPage() {
           type="text"
           className="search-bar-input"
           placeholder="Ex: Michael Jackson"
+          autoComplete="false"
           onChange={(e) => {
             setSearchValue(e.target.value);
           }}

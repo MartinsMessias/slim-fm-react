@@ -1,6 +1,6 @@
 .album-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     align-items: center;
     background: var(--color-primary-lighter);
     border-radius: 5px;
@@ -50,6 +50,5 @@
     .album-item {
         width: 400px;
         height: 100px;
-        flex-shrink: 1;
     }
 }

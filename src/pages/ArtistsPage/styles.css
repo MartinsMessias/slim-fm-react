@@ -17,11 +17,10 @@
 
 @media (min-width: 700px) {
     #artist-result {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     #artist-result main {
-        padding: 1.2rem;
         max-width: 100%;
         margin: 0 auto;
     }
@@ -29,7 +28,7 @@
     .artist-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
 }
