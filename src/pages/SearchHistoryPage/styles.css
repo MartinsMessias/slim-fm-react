@@ -4,17 +4,48 @@
 }
 
 #search-history-list {
-    width: 100vw;
+    width: 90%;
     height: 100vh;
 }
 
 .search-history-results {
-    margin-top: 15.2rem;
-    padding-left: 5%;
+    margin-top: 5rem;
 }
 
+.search-history-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-history-clear-button {
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.search-history-clear-button:hover {
+    background: var(--color-primary-light);
+    color: var(--color-box-base);
+    transition: 200ms;
+}
+
+
+.search-history-clear-button:active {
+    background: var(--color-primary-dark);
+    color: var(--color-box-base);
+    transition: 200ms;
+
+}
+
+
+
 @media (min-width: 700px) {
+
     #search-history-list {
-        max-width: 100%;
+        max-width: 90%;
     }
 }

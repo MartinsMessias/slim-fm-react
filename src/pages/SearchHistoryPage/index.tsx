@@ -1,21 +1,36 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 //Custom
 import "./styles.css";
 // import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 function SearchHistoryPage() {
-  const history = Object.entries(localStorage);
+  const savedHistory = Object.entries(localStorage);
+  const history = useHistory();
+
+  function handleClearHistory() {
+    localStorage.clear();
+    history.push("/search-history");
+  }
 
   return (
     <>
       <Header />
       <div id="search-history-list" className="container">
         <div className="search-history-results">
-          <h1 className="history-title">Seu histórico de pesquisas</h1>
+          <div className="search-history-header">
+            <h1 className="search-history-title">Seu histórico de pesquisas</h1>
+            <button
+              className="search-history-clear-button"
+              onClick={handleClearHistory}
+            >
+              Limpar histórico
+            </button>
+          </div>
           <hr />
           <ul className="history-list">
-            {history.map((item) => {
+            {savedHistory.map((item) => {
               console.log(item);
               return (
                 <li>
