@@ -40,3 +40,19 @@
     color: var(--color-button-text);
     margin: 0 0 0 10px;
 }
+
+.search-buttons {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+    .search-buttons {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+        width: 60%;
+    }
+}

@@ -1,4 +1,4 @@
-.artist-item {
+.album-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,17 +12,17 @@
     transition: 200ms;
 }
 
-.artist-item:hover {
+.album-item:hover {
     background: var(--color-primary);
     transition: 200ms;
 }
 
-.artist-item-img {
+.album-item-img {
     height: 100%;
     border-radius: 5px;
 }
 
-.artist-item-body {
+.album-item-body {
     display: flex;
     height: 100%;
     width: 45%;
@@ -31,24 +31,25 @@
     flex-wrap: wrap;
 }
 
-.artist-link {
+.album-link {
     text-decoration: none;
     color: var(--color-text-in-primary);
 }
 
-.artist-info-icon {
+.album-info-icon {
     padding: 0 2rem;
     color: var(--color-text-in-primary);
     font-size: 2.3rem;
 }
 
-.artist-item-name {
+.album-item-name {
     font-size: 2rem;
 }
 
 @media (min-width: 700px) {
-    .artist-item {
+    .album-item {
         width: 400px;
         height: 100px;
+        flex-shrink: 1;
     }
 }

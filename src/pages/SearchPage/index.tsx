@@ -10,28 +10,38 @@ import Footer from "../../components/Footer";
 import { RiSearchLine } from "react-icons/ri";
 
 function SearchPage() {
-  const [artist, setArtist] = useState("");
+  const [searhValue, setSearchValue] = useState("");
 
   return (
     <>
       <Header />
       <div className="center">
-        <p className="title">Digite o nome de um artista para pesquisar</p>
+        <p className="title">
+          Digite o nome de um artista ou de um álbum para pesquisar
+        </p>
         <input
           name="artist"
           type="text"
           className="search-bar-input"
           placeholder="Ex: Michael Jackson"
           onChange={(e) => {
-            setArtist(e.target.value);
+            setSearchValue(e.target.value);
           }}
         />
-        <Link className="button-primary" to={`search-result/${artist}`}>
-          <span className="button-primary-text">Pesquisar</span>
-          <span className="button-primary-child">
-            <RiSearchLine />
-          </span>
-        </Link>
+        <div className="search-buttons">
+          <Link className="button-primary" to={`search-artist/${searhValue}`}>
+            <span className="button-primary-text">Pesquisar artista</span>
+            <span className="button-primary-child">
+              <RiSearchLine />
+            </span>
+          </Link>
+          <Link className="button-primary" to={`search-album/${searhValue}`}>
+            <span className="button-primary-text">Pesquisar álbum</span>
+            <span className="button-primary-child">
+              <RiSearchLine />
+            </span>
+          </Link>
+        </div>
       </div>
       {/* <Footer /> */}
     </>

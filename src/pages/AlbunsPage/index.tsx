@@ -8,44 +8,45 @@ import "./styles.css";
 import ArtistItem, { Artist } from "../../components/ArtistItem";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import AlbumItem, { Album } from "../../components/AlbumItem";
 
-function ArtistsPage() {
-  const [artists, setArtists] = useState([]);
+function AlbumsPage() {
+  const [albums, setAlbums] = useState([]);
 
   var url = decodeURI(window.location.pathname);
   var cutUrl = url.split("/");
-  const artistName = cutUrl[cutUrl.length - 1];
+  const albumName = cutUrl[cutUrl.length - 1];
 
   var date = new Date();
   const date_now = date.getTime();
 
   useEffect(() => {
     const response = api
-      .get("?method=artist.search", {
+      .get("?method=album.search", {
         params: {
-          artist: artistName,
+          album: albumName,
           format: "json",
         },
       })
       .then((response) => {
-        setArtists(response.data["results"]["artistmatches"]["artist"]);
-        localStorage.setItem(date_now.toString(), artistName);
+        setAlbums(response.data["results"]["albummatches"]["album"]);
+        localStorage.setItem(date_now.toString(), `Álbum ${albumName}`);
       });
   }, []);
 
   return (
     <>
       <Header />
-      <div id="artist-result" className="container">
-        <div className="artist-block">
+      <div id="album-result" className="container">
+        <div className="album-block">
           <h2>
             Resultados encontrados para{" "}
-            <h1 className="artist-name">{artistName}</h1>
+            <h1 className="album-name">{albumName}</h1>
           </h2>
           <hr />
-          <main className="artist-list">
-            {artists.map((artist: Artist) => {
-              return <ArtistItem key={artist.name} artist={artist} />;
+          <main className="album-list">
+            {albums.map((album: Album) => {
+              return <AlbumItem key={album.name} album={album} />;
             })}
           </main>
         </div>
@@ -55,4 +56,4 @@ function ArtistsPage() {
   );
 }
 
-export default ArtistsPage;
+export default AlbumsPage;

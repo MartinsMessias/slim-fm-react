@@ -1,32 +1,32 @@
-#artist-result {
+#album-result {
     width: 100%;
     height: 100%;
 }
 
-#artist-result .artist-history-list {
+#album-result .album-history-list {
     margin: 3.2rem auto;
     width: 90%;
     list-style: none;
 }
 
-.container .artist-block {
+.container .album-block {
     margin-top: 10.2rem;
     padding: 0 1.2rem;
 }
 
 
 @media (min-width: 700px) {
-    #artist-result {
+    #album-result {
         max-width: 90%;
     }
 
-    #artist-result main {
+    #album-result main {
         padding: 1.2rem;
         max-width: 100%;
         margin: 0 auto;
     }
 
-    .artist-list {
+    .album-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;

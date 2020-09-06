@@ -19,19 +19,21 @@ const ArtistItem: React.FC<ArtistItemProps> = ({ artist }) => {
   return (
     <a href={artist.url} className="artist-link">
       <article className="artist-item">
-        <div className="artist-item-header">
-          <img
-            className="artist-item-img"
-            src={artist.image[1]["#text"]}
-            alt="Artist pic"
-          />
-          <div>
-            <strong className="artirts-item-name">{artist.name}</strong>
-            <h6>{artist.listeners} ouvintes</h6>
-          </div>
-          <div className="artist-info-icon">
-            <RiPlayMiniFill />
-          </div>
+        <img
+          className="artist-item-img"
+          src={
+            artist.image[3]["#text"]
+              ? artist.image[3]["#text"]
+              : "https://via.placeholder.com/64"
+          }
+          alt="Artist img"
+        />
+        <div className="artist-item-body">
+          <strong className="artirts-item-name">{artist.name}</strong>
+          <h6>{artist.listeners} ouvintes</h6>
+        </div>
+        <div className="artist-info-icon">
+          <RiPlayMiniFill />
         </div>
       </article>
     </a>
