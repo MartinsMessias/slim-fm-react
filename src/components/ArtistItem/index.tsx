@@ -29,7 +29,7 @@ const ArtistItem: React.FC<ArtistItemProps> = ({ artist }) => {
           alt="Artist img"
         />
         <div className="artist-item-body">
-          <strong className="artirts-item-name">{artist.name}</strong>
+          <strong className="artirt-item-name">{artist.name}</strong>
           <h6>{artist.listeners} ouvintes</h6>
         </div>
         <div className="artist-info-icon">
