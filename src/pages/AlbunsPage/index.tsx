@@ -11,7 +11,7 @@ import AlbumItem, { Album } from "../../components/AlbumItem";
 function AlbumsPage() {
   const [albums, setAlbums] = useState([]);
 
-  var url = decodeURI(window.location.pathname);
+  var url = decodeURI(window.location.hash);
   var cutUrl = url.split("/");
   const albumName = cutUrl[cutUrl.length - 1];
 

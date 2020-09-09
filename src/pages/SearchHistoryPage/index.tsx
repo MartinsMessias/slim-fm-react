@@ -31,7 +31,6 @@ function SearchHistoryPage() {
           <hr />
           <ul className="history-list">
             {savedHistory.map((item) => {
-              console.log(item);
               return (
                 <li>
                   {new Date(parseInt(item[0])).toLocaleDateString("pt-BR")} -{" "}

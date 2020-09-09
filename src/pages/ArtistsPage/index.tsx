@@ -11,7 +11,7 @@ import Header from "../../components/Header";
 function ArtistsPage() {
   const [artists, setArtists] = useState([]);
 
-  var url = decodeURI(window.location.pathname);
+  var url = decodeURI(window.location.hash);
   var cutUrl = url.split("/");
   const artistName = cutUrl[cutUrl.length - 1];
 
