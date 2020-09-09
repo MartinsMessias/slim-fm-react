@@ -16,16 +16,20 @@ function AlbumsPage() {
   const albumName = cutUrl[cutUrl.length - 1];
 
   useEffect(() => {
-    api
-      .get("?method=album.search", {
-        params: {
-          album: albumName ? albumName : "Nada",
-          format: "json",
-        },
-      })
-      .then((response) => {
-        setAlbums(response.data["results"]["albummatches"]["album"]);
-      });
+    if (albumName != "") {
+      api
+        .get("?method=album.search", {
+          params: {
+            album: albumName ? albumName : "Nada",
+            format: "json",
+          },
+        })
+        .then((response) => {
+          setAlbums(response.data["results"]["albummatches"]["album"]);
+        });
+    } else {
+      history.back();
+    }
   }, []);
 
   return (

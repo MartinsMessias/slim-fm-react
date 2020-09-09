@@ -13,7 +13,9 @@ function SearchPage() {
 
   function handleSaveHistory() {
     let date_now = new Date().getTime();
-    localStorage.setItem(date_now.toString(), searchValue);
+    searchValue != ""
+      ? localStorage.setItem(date_now.toString(), searchValue)
+      : null;
   }
 
   return (

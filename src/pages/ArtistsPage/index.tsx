@@ -16,16 +16,20 @@ function ArtistsPage() {
   const artistName = cutUrl[cutUrl.length - 1];
 
   useEffect(() => {
-    api
-      .get("?method=artist.search", {
-        params: {
-          artist: artistName ? artistName : "Nada",
-          format: "json",
-        },
-      })
-      .then((response) => {
-        setArtists(response.data["results"]["artistmatches"]["artist"]);
-      });
+    if (artistName != "") {
+      api
+        .get("?method=artist.search", {
+          params: {
+            artist: artistName ? artistName : "Nada",
+            format: "json",
+          },
+        })
+        .then((response) => {
+          setArtists(response.data["results"]["artistmatches"]["artist"]);
+        });
+    } else {
+      history.back();
+    }
   }, []);
 
   return (
