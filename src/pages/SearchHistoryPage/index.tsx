@@ -2,7 +2,6 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 //Custom
 import "./styles.css";
-// import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 function SearchHistoryPage() {
