@@ -5,8 +5,6 @@ import api from "../../services/api";
 import "./styles.css";
 
 //Components
-import ArtistItem, { Artist } from "../../components/ArtistItem";
-import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import AlbumItem, { Album } from "../../components/AlbumItem";
 

@@ -6,7 +6,6 @@ import "./styles.css";
 
 //Components
 import ArtistItem, { Artist } from "../../components/ArtistItem";
-import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 function ArtistsPage() {
@@ -20,7 +19,7 @@ function ArtistsPage() {
   const date_now = date.getTime();
 
   useEffect(() => {
-    const response = api
+    api
       .get("?method=artist.search", {
         params: {
           artist: artistName,
