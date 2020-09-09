@@ -29,7 +29,7 @@ function AlbumsPage() {
           setAlbums(response.data["results"]["albummatches"]["album"]);
         });
     } else {
-      history.back();
+      history.go(0);
     }
   }, []);
 

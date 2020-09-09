@@ -29,7 +29,7 @@ function ArtistsPage() {
           setArtists(response.data["results"]["artistmatches"]["artist"]);
         });
     } else {
-      history.back();
+      history.go(0);
     }
   }, []);
 
