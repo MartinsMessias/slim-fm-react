@@ -15,7 +15,7 @@ function SearchPage() {
     let date_now = new Date().getTime();
     searchValue != ""
       ? localStorage.setItem(date_now.toString(), searchValue)
-      : null;
+      : history.go(0);
   }
 
   return (
