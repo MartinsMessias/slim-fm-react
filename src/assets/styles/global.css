@@ -38,6 +38,10 @@ textarea {
     color: var(--color-text);
 }
 
+a {
+    cursor: pointer;
+}
+
 .container {
     width: 90vw;
     max-width: 700px;

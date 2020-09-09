@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 //Custom
@@ -12,11 +11,23 @@ import { RiSearchLine } from "react-icons/ri";
 function SearchPage() {
   const [searchValue, setSearchValue] = useState("");
   const history = useHistory();
-  function handleSaveHistory() {
-    let date_now = new Date().getTime();
-    searchValue != ""
-      ? localStorage.setItem(date_now.toString(), searchValue)
-      : history.go(0);
+
+  function handleSearchArtist() {
+    if (searchValue !== "") {
+      localStorage.setItem(new Date().getTime().toString(), searchValue);
+      history.push(`/search-artist/${searchValue}`);
+    } else {
+      history.push("/");
+    }
+  }
+
+  function handleSearchAlbum() {
+    if (searchValue !== "") {
+      localStorage.setItem(new Date().getTime().toString(), searchValue);
+      history.push(`/search-album/${searchValue}`);
+    } else {
+      history.push("/");
+    }
   }
 
   return (
@@ -37,26 +48,26 @@ function SearchPage() {
           }}
         />
         <div className="search-buttons">
-          <Link
+          <a
+            id="search-artist"
             className="button-primary"
-            to={`search-artist/${searchValue}`}
-            onClick={handleSaveHistory}
+            onClick={handleSearchArtist}
           >
             <span className="button-primary-text">Pesquisar artista</span>
             <span className="button-primary-child">
               <RiSearchLine />
             </span>
-          </Link>
-          <Link
+          </a>
+          <a
+            id="search-album"
             className="button-primary"
-            to={`search-album/${searchValue}`}
-            onClick={handleSaveHistory}
+            onClick={handleSearchAlbum}
           >
             <span className="button-primary-text">Pesquisar álbum</span>
             <span className="button-primary-child">
               <RiSearchLine />
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </>

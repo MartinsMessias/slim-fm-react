@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import api from "../../services/api";
-import { useHistory } from "react-router-dom";
 
 //Custom
 import "./styles.css";
@@ -11,26 +10,25 @@ import AlbumItem, { Album } from "../../components/AlbumItem";
 
 function AlbumsPage() {
   const [albums, setAlbums] = useState([]);
-  const history = useHistory();
+
   var url = decodeURI(window.location.hash);
   var cutUrl = url.split("/");
   const albumName = cutUrl[cutUrl.length - 1];
 
   useEffect(() => {
-    if (albumName != "") {
-      api
-        .get("?method=album.search", {
-          params: {
-            album: albumName ? albumName : "Nada",
-            format: "json",
-          },
-        })
-        .then((response) => {
-          setAlbums(response.data["results"]["albummatches"]["album"]);
-        });
-    } else {
-      history.go(0);
-    }
+    api
+      .get("?method=album.search", {
+        params: {
+          album: albumName,
+          format: "json",
+        },
+      })
+      .then((response) => {
+        setAlbums(response.data["results"]["albummatches"]["album"]);
+      })
+      .catch(() => {
+        alert("Erro na busca!");
+      });
   }, []);
 
   return (
@@ -45,7 +43,7 @@ function AlbumsPage() {
           <hr />
           <main className="album-list">
             {albums.map((album: Album) => {
-              return <AlbumItem key={album.name} album={album} />;
+              return <AlbumItem key={album.url} album={album} />;
             })}
           </main>
         </div>

@@ -17,7 +17,7 @@
 
 @media (min-width: 700px) {
     #artist-result {
-        max-width: 95%;
+        min-width: 90%;
     }
 
     #artist-result main {
@@ -28,7 +28,7 @@
     .artist-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
     }
