@@ -9,7 +9,12 @@ import Header from "../../components/Header";
 import { RiSearchLine } from "react-icons/ri";
 
 function SearchPage() {
-  const [searhValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+
+  function handleSaveHistory() {
+    let date_now = new Date().getTime();
+    localStorage.setItem(date_now.toString(), searchValue);
+  }
 
   return (
     <>
@@ -29,13 +34,21 @@ function SearchPage() {
           }}
         />
         <div className="search-buttons">
-          <Link className="button-primary" to={`search-artist/${searhValue}`}>
+          <Link
+            className="button-primary"
+            to={`search-artist/${searchValue}`}
+            onClick={handleSaveHistory}
+          >
             <span className="button-primary-text">Pesquisar artista</span>
             <span className="button-primary-child">
               <RiSearchLine />
             </span>
           </Link>
-          <Link className="button-primary" to={`search-album/${searhValue}`}>
+          <Link
+            className="button-primary"
+            to={`search-album/${searchValue}`}
+            onClick={handleSaveHistory}
+          >
             <span className="button-primary-text">Pesquisar álbum</span>
             <span className="button-primary-child">
               <RiSearchLine />

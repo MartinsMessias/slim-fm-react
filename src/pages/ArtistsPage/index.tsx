@@ -15,9 +15,6 @@ function ArtistsPage() {
   var cutUrl = url.split("/");
   const artistName = cutUrl[cutUrl.length - 1];
 
-  var date = new Date();
-  const date_now = date.getTime();
-
   useEffect(() => {
     api
       .get("?method=artist.search", {
@@ -28,7 +25,6 @@ function ArtistsPage() {
       })
       .then((response) => {
         setArtists(response.data["results"]["artistmatches"]["artist"]);
-        localStorage.setItem(date_now.toString(), `Artista ${artistName}`);
       });
   }, []);
 

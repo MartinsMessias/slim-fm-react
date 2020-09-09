@@ -15,9 +15,6 @@ function AlbumsPage() {
   var cutUrl = url.split("/");
   const albumName = cutUrl[cutUrl.length - 1];
 
-  var date = new Date();
-  const date_now = date.getTime();
-
   useEffect(() => {
     api
       .get("?method=album.search", {
@@ -28,7 +25,6 @@ function AlbumsPage() {
       })
       .then((response) => {
         setAlbums(response.data["results"]["albummatches"]["album"]);
-        localStorage.setItem(date_now.toString(), `Álbum ${albumName}`);
       });
   }, []);
 
