@@ -22,7 +22,7 @@ function AlbumsPage() {
     api
       .get("?method=album.search", {
         params: {
-          album: albumName && "Nada",
+          album: albumName ? albumName : "Nada",
           format: "json",
         },
       })

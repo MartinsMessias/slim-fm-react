@@ -22,7 +22,7 @@ function ArtistsPage() {
     api
       .get("?method=artist.search", {
         params: {
-          artist: artistName && "Nada",
+          artist: artistName ? artistName : "Nada",
           format: "json",
         },
       })
