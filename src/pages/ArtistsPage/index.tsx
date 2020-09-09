@@ -28,7 +28,7 @@ function ArtistsPage() {
       })
       .then((response) => {
         setArtists(response.data["results"]["artistmatches"]["artist"]);
-        localStorage.setItem(date_now.toString(), artistName);
+        localStorage.setItem(date_now.toString(), `Artista ${artistName}`);
       });
   }, []);
 
