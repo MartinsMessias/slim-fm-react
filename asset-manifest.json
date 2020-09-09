@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/slim-fm-react/static/css/main.4b60a765.chunk.css",
+    "main.css": "/slim-fm-react/static/css/main.1f8b465c.chunk.css",
     "main.js": "/slim-fm-react/static/js/main.4f764afb.chunk.js",
     "main.js.map": "/slim-fm-react/static/js/main.4f764afb.chunk.js.map",
     "runtime-main.js": "/slim-fm-react/static/js/runtime-main.2ec75d73.js",
@@ -8,15 +8,15 @@
     "static/js/2.0d18eec3.chunk.js": "/slim-fm-react/static/js/2.0d18eec3.chunk.js",
     "static/js/2.0d18eec3.chunk.js.map": "/slim-fm-react/static/js/2.0d18eec3.chunk.js.map",
     "index.html": "/slim-fm-react/index.html",
-    "precache-manifest.d13b99eb60774e43fc49b373358eaf20.js": "/slim-fm-react/precache-manifest.d13b99eb60774e43fc49b373358eaf20.js",
+    "precache-manifest.227e50b3cf71fd6b49839c8d976d4020.js": "/slim-fm-react/precache-manifest.227e50b3cf71fd6b49839c8d976d4020.js",
     "service-worker.js": "/slim-fm-react/service-worker.js",
-    "static/css/main.4b60a765.chunk.css.map": "/slim-fm-react/static/css/main.4b60a765.chunk.css.map",
+    "static/css/main.1f8b465c.chunk.css.map": "/slim-fm-react/static/css/main.1f8b465c.chunk.css.map",
     "static/js/2.0d18eec3.chunk.js.LICENSE.txt": "/slim-fm-react/static/js/2.0d18eec3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec75d73.js",
     "static/js/2.0d18eec3.chunk.js",
-    "static/css/main.4b60a765.chunk.css",
+    "static/css/main.1f8b465c.chunk.css",
     "static/js/main.4f764afb.chunk.js"
   ]
 }
