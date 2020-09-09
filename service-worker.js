@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/slim-fm-react/precache-manifest.b543af821d137d488dcc55fbfc9967a4.js"
+  "/slim-fm-react/precache-manifest.90934dd4715975915e7fed6b3377be4e.js"
 );
 
 self.addEventListener('message', (event) => {

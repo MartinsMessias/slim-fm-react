@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/slim-fm-react/static/css/main.863f82b7.chunk.css",
-    "main.js": "/slim-fm-react/static/js/main.d0a2ad41.chunk.js",
-    "main.js.map": "/slim-fm-react/static/js/main.d0a2ad41.chunk.js.map",
+    "main.js": "/slim-fm-react/static/js/main.0c92b230.chunk.js",
+    "main.js.map": "/slim-fm-react/static/js/main.0c92b230.chunk.js.map",
     "runtime-main.js": "/slim-fm-react/static/js/runtime-main.2ec75d73.js",
     "runtime-main.js.map": "/slim-fm-react/static/js/runtime-main.2ec75d73.js.map",
-    "static/js/2.0d18eec3.chunk.js": "/slim-fm-react/static/js/2.0d18eec3.chunk.js",
-    "static/js/2.0d18eec3.chunk.js.map": "/slim-fm-react/static/js/2.0d18eec3.chunk.js.map",
+    "static/js/2.d7b61842.chunk.js": "/slim-fm-react/static/js/2.d7b61842.chunk.js",
+    "static/js/2.d7b61842.chunk.js.map": "/slim-fm-react/static/js/2.d7b61842.chunk.js.map",
     "index.html": "/slim-fm-react/index.html",
-    "precache-manifest.b543af821d137d488dcc55fbfc9967a4.js": "/slim-fm-react/precache-manifest.b543af821d137d488dcc55fbfc9967a4.js",
+    "precache-manifest.90934dd4715975915e7fed6b3377be4e.js": "/slim-fm-react/precache-manifest.90934dd4715975915e7fed6b3377be4e.js",
     "service-worker.js": "/slim-fm-react/service-worker.js",
     "static/css/main.863f82b7.chunk.css.map": "/slim-fm-react/static/css/main.863f82b7.chunk.css.map",
-    "static/js/2.0d18eec3.chunk.js.LICENSE.txt": "/slim-fm-react/static/js/2.0d18eec3.chunk.js.LICENSE.txt"
+    "static/js/2.d7b61842.chunk.js.LICENSE.txt": "/slim-fm-react/static/js/2.d7b61842.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec75d73.js",
-    "static/js/2.0d18eec3.chunk.js",
+    "static/js/2.d7b61842.chunk.js",
     "static/css/main.863f82b7.chunk.css",
-    "static/js/main.d0a2ad41.chunk.js"
+    "static/js/main.0c92b230.chunk.js"
   ]
 }
