@@ -4,13 +4,7 @@
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/MartinsMessias/
-slim-fm-react)](https://github.com/MartinsMessias/
-slim-fm-react)<space> <space>[![GitHub license](https://img.shields.io/github/license/MartinsMessias/
-slim-fm-react)](https://github.com/MartinsMessias/
-slim-fm-react/blob/master/LICENSE)<space> <space>[![GitHub forks](https://img.shields.io/github/forks/MartinsMessias/
-slim-fm-react)](https://github.com/MartinsMessias/
-slim-fm-react/)
+[![GitHub stars](https://img.shields.io/github/stars/MartinsMessias/slim-fm-react)](https://github.com/MartinsMessias/slim-fm-react)<space> <space>[![GitHub license](https://img.shields.io/github/license/MartinsMessias/slim-fm-react)](https://github.com/MartinsMessias/slim-fm-react/blob/master/LICENSE)<space> <space>[![GitHub forks](https://img.shields.io/github/forks/MartinsMessias/slim-fm-react)](https://github.com/MartinsMessias/slim-fm-react/)
 
 </div>
 
