@@ -19,10 +19,10 @@ function AlbumsPage() {
   const date_now = date.getTime();
 
   useEffect(() => {
-    const response = api
+    api
       .get("?method=album.search", {
         params: {
-          album: albumName,
+          album: albumName && "Nada",
           format: "json",
         },
       })

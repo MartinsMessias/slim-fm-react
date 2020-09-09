@@ -6,7 +6,6 @@ import "./styles.css";
 
 //Components
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import { RiSearchLine } from "react-icons/ri";
 
 function SearchPage() {
@@ -44,7 +43,6 @@ function SearchPage() {
           </Link>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 }
