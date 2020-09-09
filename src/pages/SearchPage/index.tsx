@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 //Custom
 import "./styles.css";
@@ -10,7 +11,7 @@ import { RiSearchLine } from "react-icons/ri";
 
 function SearchPage() {
   const [searchValue, setSearchValue] = useState("");
-
+  const history = useHistory();
   function handleSaveHistory() {
     let date_now = new Date().getTime();
     searchValue != ""

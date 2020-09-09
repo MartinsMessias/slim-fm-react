@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import api from "../../services/api";
+import { useHistory } from "react-router-dom";
 
 //Custom
 import "./styles.css";
@@ -10,7 +11,7 @@ import Header from "../../components/Header";
 
 function ArtistsPage() {
   const [artists, setArtists] = useState([]);
-
+  const history = useHistory();
   var url = decodeURI(window.location.hash);
   var cutUrl = url.split("/");
   const artistName = cutUrl[cutUrl.length - 1];

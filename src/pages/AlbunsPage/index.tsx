@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import api from "../../services/api";
+import { useHistory } from "react-router-dom";
 
 //Custom
 import "./styles.css";
@@ -10,7 +11,7 @@ import AlbumItem, { Album } from "../../components/AlbumItem";
 
 function AlbumsPage() {
   const [albums, setAlbums] = useState([]);
-
+  const history = useHistory();
   var url = decodeURI(window.location.hash);
   var cutUrl = url.split("/");
   const albumName = cutUrl[cutUrl.length - 1];
