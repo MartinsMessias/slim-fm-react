@@ -40,6 +40,7 @@ A proposta do projeto foi criar uma aplicação de front-end usando ReactJS em q
 - JavaScript
 - React
 - Axios
+- Typescript
 --- 
 
 ## ⌨ Como Executar o Projeto:
