@@ -20,7 +20,7 @@
 
 ## 📖 Sobre:
 
-A proposta do projeto foi criar uma aplicação de front-end usando ReactJS em que fosse possível realizar buscas por artistas e álbuns e retornar os dados que vem através da API do LAST.FM. É possível também, salvar o histórico de buscas, e limpar quando for necessário. 
+Uma aplicação de front-end usando ReactJS em que fosse possível realizar buscas por artistas e álbuns e retornar os dados que vem através da API do LAST.FM. É possível também, salvar o histórico de buscas, e limpar quando for necessário. 
 
 --- 
 
