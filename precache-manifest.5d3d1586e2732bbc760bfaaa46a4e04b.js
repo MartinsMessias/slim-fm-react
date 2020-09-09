@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1b7b850190cbf7c9cef1eb4768e35dfb",
+    "revision": "f965953d2c65ff49a1c00a9d824092d5",
     "url": "/slim-fm-react/index.html"
   },
   {
-    "revision": "1026f0721a14990728f9",
+    "revision": "db9ee3ad396327db5a04",
     "url": "/slim-fm-react/static/css/main.863f82b7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/slim-fm-react/static/js/2.0d18eec3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1026f0721a14990728f9",
-    "url": "/slim-fm-react/static/js/main.ffa47712.chunk.js"
+    "revision": "db9ee3ad396327db5a04",
+    "url": "/slim-fm-react/static/js/main.cf1f2d0a.chunk.js"
   },
   {
     "revision": "13d926d4164c71221dff",
